@@ -24,14 +24,16 @@ public class User {
 
    public User() {}
 
+
    public Car getCar() {
       return car;
    }
 
-   public void setCar(Car car) {
+   public User setCar(Car car) {
       this.car = car;
+      car.setUser(this);
+      return this;
    }
-
    public User(String firstName, String lastName, String email) {
       this.firstName = firstName;
       this.lastName = lastName;

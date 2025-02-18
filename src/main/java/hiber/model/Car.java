@@ -28,6 +28,11 @@ public class Car implements Serializable {
         this.series = series;
     }
 
+    public Car( String model, int series) {
+        this.series = series;
+        this.model = model;
+    }
+
     public Long getId() {
         return id;
     }
