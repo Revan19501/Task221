@@ -18,6 +18,7 @@ public class MainApp {
 
         User user1 = new User("User1", "Lastname1", "user1@mail.ru")
                 .setCar(new Car("BMW", 123));
+
         User user2 = new User("User2", "Lastname2", "user1@mail.ru")
                 .setCar(new Car("BMW", 234));
 
@@ -35,7 +36,7 @@ public class MainApp {
         userService.delete(user3);
 
 
-        System.out.println(userService.getUser("BMW", 123));
+        System.out.println(userService.getUserByCar("BMW", 123));
 
         List<User> users = userService.listUsers();
         for (User user : users) {
