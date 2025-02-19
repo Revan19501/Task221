@@ -19,9 +19,11 @@ public class MainApp {
         User user1 = new User("User1", "Lastname1", "user1@mail.ru")
                 .setCar(new Car("BMW", 123));
         User user2 = new User("User2", "Lastname2", "user1@mail.ru")
-                .setCar(new Car("BMW", 234));;
+                .setCar(new Car("BMW", 234));
+
         User user3 = new User("User3", "Lastname3", "user1@mail.ru")
-                .setCar(new Car("BMW", 345));;
+                .setCar(new Car("BMW", 345));
+
         User user4 = new User("User4", "Lastname4", "user1@mail.ru")
                 .setCar(new Car("BMW", 456));
 
